@@ -23,22 +23,46 @@ body {
   overflow-x: hidden;
 }
 
-/* Star canvas sits behind everything, subtle so text stays readable */
-#supernova {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.45;
-}
-
 header.nav,
 main,
 footer {
   position: relative;
   z-index: 2;
+}
+
+/* Glowing white ring in the background */
+.bg-ring {
+  position: fixed;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(42vmin, 300px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 14px solid #ffffff;
+  z-index: 0;
+  pointer-events: none;
+  box-shadow:
+    0 0 26px 6px rgba(255, 255, 255, 0.7),
+    0 0 70px 16px rgba(200, 220, 255, 0.4),
+    0 0 160px 50px rgba(150, 120, 255, 0.2),
+    inset 0 0 60px rgba(255, 255, 255, 0.28);
+}
+
+/* Frosted veil so the background ring never hurts readability */
+.bg-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 44%,
+    rgba(10, 11, 20, 0.28) 0%,
+    rgba(10, 11, 20, 0.68) 55%,
+    rgba(10, 11, 20, 0.88) 100%
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
 }
 
 /* ---------- Nav ---------- */
@@ -59,7 +83,7 @@ footer {
   font-size: 1.1rem;
 }
 
-.brand .thin { color: var(--muted); font-weight: 500; }
+.brand .thin { font-weight: 700; }
 
 .powered {
   font-weight: 400;
@@ -230,6 +254,9 @@ footer {
   font-size: 0.88rem;
 }
 .brand.small { justify-content: center; margin-bottom: 10px; color: var(--text); }
+
+footer a { color: var(--text); }
+footer a:hover { color: var(--accent); }
 
 @media (max-width: 640px) {
   .links { gap: 18px; }

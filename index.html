@@ -12,11 +12,11 @@
 </head>
 <body>
 
-<canvas id="supernova"></canvas>
+<div class="bg-ring" aria-hidden="true"></div>
+<div class="bg-veil" aria-hidden="true"></div>
 
 <header class="nav">
   <div class="brand">
-    <span class="star"></span>
     <span class="brand-text">Supernova<span class="thin">OS</span></span>
     <span class="powered">powered by the Supernova Foundation</span>
   </div>
@@ -24,6 +24,7 @@
     <a href="#features">Features</a>
     <a href="#gallery">Screenshots</a>
     <a href="#about">Foundation</a>
+    <a href="https://github.com/ggg610523-lab/Supernova" target="_blank" rel="noopener">GitHub</a>
   </nav>
 </header>
 
@@ -32,9 +33,8 @@
     <p class="eyebrow">Powered by the Supernova Foundation</p>
     <h1>An operating system<br /><span class="grad">born from a star.</span></h1>
     <p class="sub">
-      Supernova OS is a free, open, and blindingly fast desktop built on the
-      Pulsar UI toolkit. It detonates the old way of computing and leaves a
-      brighter galaxy behind.
+      Supernova OS is a free, open, and blindingly fast desktop. It detonates
+      the old way of computing and leaves a brighter galaxy behind.
     </p>
     <div class="cta">
       <a class="btn ghost" href="#features">Explore features</a>
@@ -46,28 +46,16 @@
     <h2>Synthesis in every layer</h2>
     <div class="grid">
       <article class="card">
-        <h3>Pulsar UI</h3>
-        <p>A hand-crafted C toolkit. Silky window management, native widgets, and zero bloat.</p>
-      </article>
-      <article class="card">
-        <h3>Singularity Security</h3>
-        <p>Sandboxed apps, per-process isolation, and a hardened core that never collapses.</p>
-      </article>
-      <article class="card">
-        <h3>Nova Package Core</h3>
-        <p>Atomic updates and instant rollbacks. Your system only ever moves forward.</p>
-      </article>
-      <article class="card">
-        <h3>Deep Space Theme</h3>
-        <p>A GPU-accelerated dark interface tuned for long nights among the stars.</p>
-      </article>
-      <article class="card">
-        <h3>Instant Boot</h3>
-        <p>From cold metal to login in under four seconds on modern hardware.</p>
-      </article>
-      <article class="card">
         <h3>Open Source</h3>
-        <p>Every line is public. Fork the universe, contribute a constellation.</p>
+        <p>Every line is public. Fork it, audit it, contribute.</p>
+      </article>
+      <article class="card">
+        <h3>Buttery Smoothness</h3>
+        <p>A fluid, responsive interface that never stutters.</p>
+      </article>
+      <article class="card">
+        <h3>Convergence</h3>
+        <p>The same OS across desktop, mobile, and beyond.</p>
       </article>
     </div>
   </section>
@@ -94,10 +82,8 @@
     <div class="about-inner">
       <h2>The Supernova Foundation</h2>
       <p>
-        We are a non-profit collective of engineers, designers, and dreamers
-        building software that belongs to everyone. The Foundation stewards
-        Supernova OS, publishes its source, and keeps it free — funded by its
-        community, never by your data.
+        I'm Gautam v.s. I build, maintain, and open-source Supernova OS, and I
+        keep it free — funded by the community, never by your data.
       </p>
       <div class="stats">
         <div><strong>100%</strong><span>Open source</span></div>
@@ -116,9 +102,10 @@
 <footer>
   <div class="brand small"><span class="star"></span> Supernova OS</div>
   <p class="powered-footer">Powered by the Supernova Foundation</p>
+  <p>Developed by <a href="https://github.com/ggg610523-lab" target="_blank" rel="noopener">Gautam v.s</a> · <a href="https://github.com/ggg610523-lab/Supernova" target="_blank" rel="noopener">Source on GitHub</a></p>
   <p>&copy; <span id="year"></span> Supernova Foundation. Built for the far reaches.</p>
 </footer>
 
-<script src="supernova.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
