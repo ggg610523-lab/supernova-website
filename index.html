@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supernova OS — Powered by the Supernova Foundation</title>
+<meta name="description" content="Supernova OS is a fast, open, beautiful operating system built by the Supernova Foundation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="supernova"></canvas>
+
+<header class="nav">
+  <div class="brand">
+    <span class="star"></span>
+    <span class="brand-text">Supernova<span class="thin">OS</span></span>
+    <span class="powered">powered by the Supernova Foundation</span>
+  </div>
+  <nav class="links">
+    <a href="#features">Features</a>
+    <a href="#gallery">Screenshots</a>
+    <a href="#about">Foundation</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">Powered by the Supernova Foundation</p>
+    <h1>An operating system<br /><span class="grad">born from a star.</span></h1>
+    <p class="sub">
+      Supernova OS is a free, open, and blindingly fast desktop built on the
+      Pulsar UI toolkit. It detonates the old way of computing and leaves a
+      brighter galaxy behind.
+    </p>
+    <div class="cta">
+      <a class="btn ghost" href="#features">Explore features</a>
+    </div>
+    <p class="meta">In development · x86_64 &amp; ARM64 · Free forever</p>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Synthesis in every layer</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Pulsar UI</h3>
+        <p>A hand-crafted C toolkit. Silky window management, native widgets, and zero bloat.</p>
+      </article>
+      <article class="card">
+        <h3>Singularity Security</h3>
+        <p>Sandboxed apps, per-process isolation, and a hardened core that never collapses.</p>
+      </article>
+      <article class="card">
+        <h3>Nova Package Core</h3>
+        <p>Atomic updates and instant rollbacks. Your system only ever moves forward.</p>
+      </article>
+      <article class="card">
+        <h3>Deep Space Theme</h3>
+        <p>A GPU-accelerated dark interface tuned for long nights among the stars.</p>
+      </article>
+      <article class="card">
+        <h3>Instant Boot</h3>
+        <p>From cold metal to login in under four seconds on modern hardware.</p>
+      </article>
+      <article class="card">
+        <h3>Open Source</h3>
+        <p>Every line is public. Fork the universe, contribute a constellation.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>See it in action</h2>
+    <div class="shots">
+      <figure class="shot wide">
+        <img src="Screenshot_20261012_232922.png" alt="Supernova OS desktop" loading="lazy" />
+      </figure>
+      <figure class="shot">
+        <img src="Screenshot_20261012_232933.png" alt="Supernova OS window management" loading="lazy" />
+      </figure>
+      <figure class="shot">
+        <img src="Screenshot_20261012_233124.png" alt="Supernova OS applications" loading="lazy" />
+      </figure>
+      <figure class="shot wide">
+        <img src="Screenshot_20261012_233142.png" alt="Supernova OS settings" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-inner">
+      <h2>The Supernova Foundation</h2>
+      <p>
+        We are a non-profit collective of engineers, designers, and dreamers
+        building software that belongs to everyone. The Foundation stewards
+        Supernova OS, publishes its source, and keeps it free — funded by its
+        community, never by your data.
+      </p>
+      <div class="stats">
+        <div><strong>100%</strong><span>Open source</span></div>
+        <div><strong>0</strong><span>Trackers</span></div>
+        <div><strong>&infin;</strong><span>Possibilities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <h2>Still taking shape</h2>
+    <p>Supernova OS is in active development. The installer isn't available yet — check back soon.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="brand small"><span class="star"></span> Supernova OS</div>
+  <p class="powered-footer">Powered by the Supernova Foundation</p>
+  <p>&copy; <span id="year"></span> Supernova Foundation. Built for the far reaches.</p>
+</footer>
+
+<script src="supernova.js"></script>
+</body>
+</html>
